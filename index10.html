@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /*Root is a Global variables*/
+        :root{
+            --color:rgb(63, 63, 146);
+            --seccolor:rgb(60, 60, 196);
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            background-color: var(--color)
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 34px;
+        }
+        .container{
+            background-color: var(--seccolor)
+        }
+        /*Local Variables*/
+        ul li:first-child{
+            --color:rgb(5, 138, 164);
+            background-color: var(--color);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Car</li>
+            <li>Bike</li>
+            <li>Scooter</li>
+            <li>Truck</li>
+            <li>JCB</li>
+            <li>Lorry</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum adipisci at nam sequi facilis vitae blanditiis sit optio assumenda distinctio enim sed, nemo, ipsam corrupti pariatur debitis saepe ad inventore harum nisi numquam. Recusandae magni quo quasi nesciunt natus, quod beatae doloremque et dignissimos laborum!
+    </div>
+    
+</body>
+</html>
