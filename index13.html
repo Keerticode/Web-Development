@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /*.box:first-child{
+            background-color:yellowgreen;
+        }*/
+        /*.box::first-line{
+            color: yellow;
+        }*/
+        /*.boxes{
+            background-color: rgb(244, 244, 51);
+            border: 2px solid black line;
+        }
+        p,a,.box,[data-color="primary"]{
+            margin-top: 45px;
+        }*/
+        /*.box:nth-child(even){
+            background-color: rgb(207, 245, 245);
+        }
+        .box:nth-child(2){
+            background-color: cyan;
+        }*/
+        /*.boxes::before{
+            content: "Keerti is a Good girl";
+            color: brown;
+        }
+        .boxes::after{
+            content: "Spoorti is a Innocent girl";
+            color: palevioletred;
+        }*/
+        /*::selection{
+            color: aqua;
+            background-color: black;
+        }*/
+        .box::first-letter{
+            color: peru;
+        }
+        input::placeholder{
+            color: rgb(3, 3, 78);
+        }
+        </style> 
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary"clas="box">I am a First Box</div>
+        <div class="box">I am a Second Box</div>
+        <div class="box">I am a Third Box</div>
+        <input type="text" placeholder="type your name">
+    </div>
+</body>
+</html>
