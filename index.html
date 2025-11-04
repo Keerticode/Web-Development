@@ -3,29 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Exercise</title>
+    <title>Layout</title>
     <style>
-        p:first-child{
-            color: red;
-            background-color: yellow;
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: rgb(59, 58, 58);
         }
-        p{
-            color:white;
-            background-color:blue;
+        .boxes{
+            margin-top: 20px;
+            margin-left: 20px;
+            border: 1px solid white;
+            height: 80vh;
+            width: 80vw;
+        }
+        .box1{
+            border: 0.5px solid white;
+            height: 35px;
+            width: 80vw;
+            background-color: pink;
+        }
+        .box2{
+            border: 0.5px solid white;
+            height: 35vh;
+            background-color: rgb(72, 234, 72);
+        }
+        .box3{
+            border: 0.5px solid white;
+            height: 30vh;
+            width: 35vw;
+            margin-left: 20px;
+            margin-top: -240px;
+            background-color: rgb(229, 166, 103);
+            
+        }
+        .box4{
+            border: 0.5px solid white;
+            height: 30vh;
+            width: 35vw;
+            margin-left: 480px;
+            margin-top: -220px;
+            background-color: skyblue;
+        }
+        .box5{
+            border: 0.5px solid white;
+            height: 90px;
+            width: 68vw;
+            margin-left: 40px;
+            margin-top: 100px;
+            text-align: center;
+            font-size:30px;
+            font-style: italic;
+            border-radius: 20px;
+            background-color: rgb(214, 205, 223);
+        }
+        .box6{
+            border:0.5px solid white;
+            height: 35px;
+            width: 80vw;
+            margin-top:81px;
+            background-color: antiquewhite;
         }
     </style>
 </head>
 <body>
-    <!-- Write html and css code to style a paragraph inside a div which contains 5 other paragraphs. The first paragraph must have background color yellow and text color red. The other paragraphs must have background color blue and text color white. The HMTL is written below for your reference. Do not change this html -->
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo consectetur dicta fuga ea at vitae suscipit, repellendus illum deleniti laboriosam ipsa distinctio.</p>
-        <p>I am another para</p>
-        <p>I am also another para</p>
+    <div class="boxes">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5">Welcome to this Sigma Web Development Express.....!</div>
+        <div class="box6"></div>
     </div>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo consectetur dicta fuga ea at vitae suscipit, repellendus illum deleniti laboriosam ipsa distinctio.</p>
-        <p>I am another para</p>
-        <p>I am also another para</p>
-    </div>
+    
 </body>
-</html>Collapse commentComment on line R21Dhanush-Ganiga commented on Nov 23, 2023 Dhanush-Ganigaon Nov 23, 2023More actions
+</html>
