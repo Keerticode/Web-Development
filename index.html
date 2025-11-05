@@ -3,78 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout</title>
+    <title>CSS Layout</title>
     <style>
         *{
-            padding: 0;
             margin: 0;
-            background-color: rgb(59, 58, 58);
+            padding: 0;
+            background-color: rgb(77, 76, 76);
         }
-        .boxes{
-            margin-top: 20px;
-            margin-left: 20px;
-            border: 1px solid white;
-            height: 80vh;
-            width: 80vw;
+        header{
+            position: sticky;
+            top: 0;
+        }
+        nav{
+            background-color: pink;
+            height: 80px;
+        }
+        .container{
+            background-color: green;
+            margin: 12px 34px;
+            height: 45vh;
         }
         .box1{
-            border: 0.5px solid white;
-            height: 35px;
-            width: 80vw;
-            background-color: pink;
+            background-color: peru;
+            height: 40vh;
+            width: 45%;
+            display: inline-block;
+            margin: 0 12px;
+            margin-top: 16px;
+            margin-left: 55px;
         }
         .box2{
-            border: 0.5px solid white;
-            height: 35vh;
-            background-color: rgb(72, 234, 72);
+            background-color: skyblue;
+            height: 40vh;
+            width: 45%;
+            display: inline-block;
+            margin: 0 12px;     
         }
         .box3{
-            border: 0.5px solid white;
-            height: 30vh;
-            width: 35vw;
-            margin-left: 20px;
-            margin-top: -240px;
-            background-color: rgb(229, 166, 103);
-            
-        }
-        .box4{
-            border: 0.5px solid white;
-            height: 30vh;
-            width: 35vw;
-            margin-left: 480px;
-            margin-top: -220px;
-            background-color: skyblue;
-        }
-        .box5{
-            border: 0.5px solid white;
+            background-color: beige;
+            border: 0.2px solid white;
             height: 90px;
-            width: 68vw;
-            margin-left: 40px;
-            margin-top: 100px;
-            text-align: center;
-            font-size:30px;
+            font-size: 50px;
             font-style: italic;
-            border-radius: 20px;
-            background-color: rgb(214, 205, 223);
+            text-align: center;
+            margin-top: 80px;
+            border-radius: 15px;
         }
-        .box6{
-            border:0.5px solid white;
+        .botmbox{
+            background-color: rgb(228, 142, 157);
+            height: 80px;
+            margin-top: 250px;
+        }
+        .roundbtn{
             height: 35px;
-            width: 80vw;
-            margin-top:81px;
-            background-color: antiquewhite;
+            width: 35px;
+            background-color: orange;
+            position: fixed;
+            bottom: 70px;
+            right: 13px;
         }
     </style>
 </head>
 <body>
-    <div class="boxes">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-        <div class="box4"></div>
-        <div class="box5">Welcome to this Sigma Web Development Express.....!</div>
-        <div class="box6"></div>
-    </div>
+    <header>
+        <nav></nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3">Welcome to this Sigmna Web Development Express........!</div>
+        </div>
+        <div class="roundbtn"></div>
+    </main>
+
+    <footer>
+        <div class="botmbox"></div>
+    </footer>
     
 </body>
 </html>
